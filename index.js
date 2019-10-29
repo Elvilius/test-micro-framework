@@ -1,16 +1,11 @@
 import * as app from './src/app';
 
-
 app.get('/', (req, res) => {
-    console.log(req.query);
-    res.end('huy');
+  res.end('huy');
 });
 
 app.get('/test/:id', (req, res) => {
-    res.end('hello world');
+  res.end('hello world');
 });
 
-app.listen(3600, () =>{
-})
-
-
+app.listen(3600, () => console.log(''));
