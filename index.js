@@ -1,11 +1,12 @@
 import * as app from './src/app';
 
-app.get('/', (req, res) => {
-  res.end('huy');
-});
-
 app.get('/test/:id', (req, res) => {
-  res.end('hello world');
+  const { id } = req.params;
+  res.end(`${id}`);
 });
 
-app.listen(3600, () => console.log(''));
+app.get('/', (req, res) => {
+  res.end('Hello world');
+});
+
+app.listen(3600, () => console.log('Hello World!'));

@@ -3,7 +3,7 @@ import * as route from './http/router/router';
 
 export const get = (path, handler) => {
   route.add({
-    method: 'GET',
+    methodHttp: 'GET',
     path,
     handler,
   });
@@ -11,7 +11,7 @@ export const get = (path, handler) => {
 
 export const post = (path, handler) => {
   route.add({
-    method: 'POST',
+    methodHttp: 'POST',
     path,
     handler,
   });
